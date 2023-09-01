@@ -1,0 +1,179 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+        crossorigin="anonymous"></script>
+
+    <title>Movie Collection</title>
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Roboto+Condensed&display=swap" rel="stylesheet">
+	
+	<style>
+		* {
+		font-family: 'Roboto Condensed', sans-serif;
+		}
+		.mytitle {
+		width: 100%;
+		height: 250px;
+		background-image: linear-gradient(0deg, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('https://getwallpapers.com/wallpaper/full/f/a/a/16782.jpg');
+		background-position: center;
+		background-size: cover;
+		color: white;
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		justify-content: center;
+		}
+		
+		.mytitle > button {
+		width: 200px;
+		height: 50px;
+		background-color: transparent;
+		color: white;
+		border-radius: 50px;
+		border: 1px solid white;
+		margin-top: 10px;
+		}
+		
+		.mytitle > button:hover {
+		border: 2px solid white;
+		}
+		
+		.mycards {
+		margin: 20px auto 0px auto;
+		width: 95%;
+		max-width: 1200px;
+		}
+		
+		.mycomment {
+		color: gray
+		}
+		
+		.mypost {
+		width: 95%;
+		max-width: 500px;
+		margin: 20px auto 0px auto;
+		padding: 20px;
+		box-shadow: 0px 0px 3px 0px gray;
+		}
+		
+		.mybtns {
+		display: flex;
+		flex-direction: row;
+		align-items: center;
+		justify-content: center;
+		margin-top: 20px;
+		}
+		
+		.mybtns > button {
+		margin-right: 10px;
+		}
+	</style>
+</head>
+
+<body>
+    <div class="mytitle">
+		<h1>Movie Collection</h1>
+		<button>Save to Gallery</button>
+	</div>
+	
+	<div class="mypost">
+	
+	<div class="form-floating mb-3">
+  <input type="text" class="form-control" id="floatingInput" placeholder="Enter Movie URL">
+  <label for="floatingInput">Movie URL</label>
+</div>
+
+<div class="input-group mb-3">
+  <label class="input-group-text" for="inputGroupSelect01">Rating</label>
+  <select class="form-select" id="inputGroupSelect01">
+    <option selected>-- How did you enjoy it? --</option>
+    <option value="1">Terrible / ⭐</option>
+    <option value="2">Bad /⭐⭐</option>
+    <option value="3">Decent /⭐⭐⭐</option>
+	<option value="4">Good /⭐⭐⭐⭐</option>
+	<option value="5">Excellent /⭐⭐⭐⭐⭐</option>
+	
+  </select>
+</div>
+
+<div class="form-floating">
+  <textarea class="form-control" placeholder="Leave a comment here" id="floatingTextarea"></textarea>
+  <label for="floatingTextarea">Comment</label>
+</div>
+
+<div class="mybtns">
+<button type="button" class="btn btn-dark">Save</button>
+<button type="button" class="btn btn-outline-dark">Close</button>
+	</div>
+	</div>
+	
+	<div class="mycards">
+  <div class="row row-cols-1 row-cols-md-4 g-4">
+  
+  <div class="col">
+<div class="card h-100">
+  <img src="https://s1.zerochan.net/Umineko.no.Naku.Koro.ni.600.347382.jpg" class="card-img-top" alt="...">
+  <div class="card-body">
+    <h5 class="card-title">When They Cry: Umineko</h5>
+    <p class="card-text">A mystery movie that not only will test your wits, but also take you to a rollercoaster of emotions as you delve into the depth of mystery set in Rokkenjima Island. Combining the element of mystery and fantasy, it's simply a masterpiece of its genre.</p>
+	<p>Excellent /⭐⭐⭐⭐⭐</p> 
+	<p class="mycomment">The description tells no lies. I was at the edge of my seat the whole time when watching it. Definitely a movie of the year. Heck, even a decade! A cruel move to other mystery movies for setting the new standard way too high.</p>
+  </div>
+</div>
+
+    </div>
+  
+  <div class="col">
+<div class="card h-100">
+  <img src="https://images.wallpapersden.com/image/download/saya-no-uta-saya_bGVqaWiUmZqaraWkpJRmamhrrWdmamc.jpg" class="card-img-top" alt="...">
+  <div class="card-body">
+    <h5 class="card-title">The Song of Saya</h5>
+    <p class="card-text">A dark romance movie that will blow your expectation regarding its core of genre. Unfolding a tale of love in the world of psychological horror, The Song of Saya is well-known for its gruesome approach to the dark side of love, unfolding a new perspective on how you view the very world itself.</p>
+	<p>Good /⭐⭐⭐⭐</p> 
+	<p class="mycomment">Definitely one enjoyable movie. It kept me wondering about the next possible things that could happen, which always turned out to be outside your expectation. I would strongly advice you to watch it alone though, as some scenes could be seen as inappropriate. This movie offers a lot of immoral value, while at the same time making you encourage that same aspect of immorality.</p>
+  </div>
+</div>
+
+    </div>
+  
+  <div class="col">
+<div class="card h-100">
+  <img src="https://static.wikia.nocookie.net/all-worlds-alliance/images/1/18/Clannad_-_After_Story_Poster.png/revision/latest?cb=20210719020219" class="card-img-top" alt="...">
+  <div class="card-body">
+    <h5 class="card-title">Clannad</h5>
+    <p class="card-text">Drama, family, responsibility. This movie involves many aspect of life that will make you realize the importance in what seems to be mundanity. Introducing you to the bright, light-hearted side of life in the beginning, this movie will then wreck your heart by taking those same happy moments to a painful reality that the characters will have to face.</p>
+	<p>Bad /⭐⭐</p> 
+	<p class="mycomment">Haven't finished it yet due to how unneccessary long the slice of life part felt. People kept telling me what a great movie this is, but I just couldn't endure those boring mundane everyday scenes at the first half of this movie. For god's sake, I have watched a thriller movie with better slice of life scenes! Maybe this one's not really my cup of tea, but I promise myself to come back to this movie again someday and give it a second try. But as of now, I just don't care anymore.......</p>
+  </div>
+</div>
+
+    </div>
+  
+    <div class="col">
+<div class="card h-100">
+  <img src="https://picfiles.alphacoders.com/354/thumb-354346.jpg" class="card-img-top" alt="...">
+  <div class="card-body">
+    <h5 class="card-title">Perfect Blue</h5>
+    <p class="card-text">The truest sense of a psychological thriller movie. This movie shows elaborately just how much a perspective could change the very flow of reality itself. It delves deep into the character's sanity, identity, and safety.</p>
+	<p>Excellent /⭐⭐⭐⭐⭐</p> 
+	<p class="mycomment">If anyone's going to ask me for the best thriller movie ever, my answer would forever be this! I love psychology, I love thriller, I love scenes that will confuse the shit out of me, which will turn out to be mindblowing plot-twists that will change the entire flow of the story. This comment section won't be enough to elaborate how much love I got for this masterpiece of work. Perfect Blue is just...perfect. An absolute classic that will prove quite a tough challenge for other thriller movies to take its throne. </p>
+  </div>
+</div>
+
+    </div>
+  </div>
+</div>
+	
+</body>
+
+</html>
